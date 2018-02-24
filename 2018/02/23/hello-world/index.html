@@ -235,7 +235,7 @@
     <link itemprop="mainEntityOfPage" href="http://nickxu.cn/2018/02/23/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lemon-XQ">
+      <meta itemprop="name" content="Nick-XU">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -274,6 +274,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/02/23/hello-world/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2018/02/23/hello-world/" itemprop="commentsCount"></span>
+                </a>
+              
             
           
 
@@ -360,7 +371,7 @@
 
   
     <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="your uid"></div>
+      <div id="SOHUCS"></div>
     </div>
 
   
@@ -400,8 +411,8 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">Lemon-XQ</p>
-              <p class="site-description motion-element" itemprop="description">银河街角，时光路口</p>
+              <p class="site-author-name" itemprop="name">Nick-XU</p>
+              <p class="site-description motion-element" itemprop="description">青春就是疯狂的奔跑，然后华丽的跌倒，站起来，再跑……</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -472,21 +483,21 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Lemon-XQ</span>
+  <span class="author" itemprop="copyrightHolder">Nick-XU</span>
 
   
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <!--<div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>-->
 
 
 
-  <span class="post-meta-divider">|</span>
+  <!--<span class="post-meta-divider">|</span>-->
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <!--<div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>-->
 
 
 
@@ -497,7 +508,7 @@
 
   
     <span class="site-uv">
-      <i class="fa fa-user">本站访客数</i>
+      <span class="fa fa-user">本站访客数</span>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
       人次
     </span>
@@ -505,7 +516,7 @@
 
   
     <span class="site-pv">
-      <i class="fa fa-eye">本站总访问量</i>
+      <span class="fa fa-eye">本站总访问量</span>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
       次
     </span>
@@ -654,20 +665,24 @@
 
 
   
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
+
+
+
+
   
-
-
-
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytu0KGF7';
+      var conf = 'prod_f16b11b84c116e4622c0e86d45697254';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
 
 
 
