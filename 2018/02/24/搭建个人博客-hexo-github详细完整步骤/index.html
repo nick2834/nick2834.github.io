@@ -94,7 +94,10 @@
 <meta property="og:image" content="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-134129.png">
 <meta property="og:image" content="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-135127.png">
 <meta property="og:image" content="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-135257.png">
-<meta property="og:updated_time" content="2018-02-24T05:57:23.000Z">
+<meta property="og:image" content="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-140357.png">
+<meta property="og:image" content="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-141232.png">
+<meta property="og:image" content="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-141658.png">
+<meta property="og:updated_time" content="2018-02-24T06:17:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建个人博客-hexo+github详细完整步骤">
 <meta name="twitter:description" content="原本是用wordpress搭建的博客网站，但因个人原因暂时没有太多时间来写主题，就偷个懒利用hexo+github快速搭建一个简单的博客程序，下面分享一下安装步骤 安装node.js此步骤忽略 安装步骤: Node安装教程 安装hexo电脑打开终端 输入以下命令1npm install -g hexo  初始化Hexo在电脑任意位置创建搭建博客的文件夹1hexo init 初始化完成后是这个样子的">
@@ -368,7 +371,12 @@
 <p>注意冒号后面都有个空格</p>
 <p>配置完成后，再输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure></p>
 <p>完成后打开你刚刚的你的git地址，比如我的是<code>https://nick2834.github.io</code>，即可打开你现在在github上面搭建的博客了</p>
-<h3 id="域名绑定（重点）"><a href="#域名绑定（重点）" class="headerlink" title="域名绑定（重点）"></a>域名绑定（<em>重点</em>）</h3>
+<h3 id="域名绑定（重点）"><a href="#域名绑定（重点）" class="headerlink" title="域名绑定（重点）"></a>域名绑定（<em>重点</em>）</h3><p>域名注册购买不赘述，请自行解决<br>增加两个GitHub官方解析地址<code>192.30.252.154</code>，<code>192.30.252.153</code><br>然后添加CNAME域名指向解析，看截图第三条，如下图<br><img src="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-140357.png" alt="域名解析"><br>然后打开你创建的博客目录，/source/目录下面创建一个CNAME文件，不要后缀，然后用文本打开，上面写你的域名地址，不要http，如下图<br><img src="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-141232.png" alt="CNAME"></p>
+<p>然后再输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>或者<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure></p>
+<p>然后打开github上面的项目，打开设置<br><img src="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-141658.png" alt="此处输入图片的描述"></p>
+<p>配置完成后，你的博客应该已经搭建完毕了</p>
+
       
     </div>
     
