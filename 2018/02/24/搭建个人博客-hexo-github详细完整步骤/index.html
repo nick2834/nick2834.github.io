@@ -92,7 +92,9 @@
 <meta property="og:image" content="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-132716.png">
 <meta property="og:image" content="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-133943.png">
 <meta property="og:image" content="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-134129.png">
-<meta property="og:updated_time" content="2018-02-24T05:45:20.000Z">
+<meta property="og:image" content="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-135127.png">
+<meta property="og:image" content="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-135257.png">
+<meta property="og:updated_time" content="2018-02-24T05:57:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建个人博客-hexo+github详细完整步骤">
 <meta name="twitter:description" content="原本是用wordpress搭建的博客网站，但因个人原因暂时没有太多时间来写主题，就偷个懒利用hexo+github快速搭建一个简单的博客程序，下面分享一下安装步骤 安装node.js此步骤忽略 安装步骤: Node安装教程 安装hexo电脑打开终端 输入以下命令1npm install -g hexo  初始化Hexo在电脑任意位置创建搭建博客的文件夹1hexo init 初始化完成后是这个样子的">
@@ -356,7 +358,17 @@
 <p>主题配置</p>
 <p><img src="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-134129.png" alt="主题配置"><br>以next主题为例<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
 <p>这样next主题就搭配好了</p>
-
+<p>终端输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
+<p>启动后，浏览器输入localhost:4000 就能在本地预览刚刚搭建好的博客了</p>
+<ul>
+<li>github配置<br><img src="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-135127.png" alt="github配置"></li>
+</ul>
+<p>配置完成后，再打开博客根目录，打开_config.yml</p>
+<p><img src="http://p0mejgdza.bkt.clouddn.com//blog/QQ20180224-135257.png" alt="github配置"><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: 你刚刚创建的那个GitHub地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<p>注意冒号后面都有个空格</p>
+<p>配置完成后，再输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure></p>
+<p>完成后打开你刚刚的你的git地址，比如我的是<code>https://nick2834.github.io</code>，即可打开你现在在github上面搭建的博客了</p>
+<h3 id="域名绑定（重点）"><a href="#域名绑定（重点）" class="headerlink" title="域名绑定（重点）"></a>域名绑定（<em>重点</em>）</h3>
       
     </div>
     
@@ -532,7 +544,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装node-js"><span class="nav-number">1.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化Hexo"><span class="nav-number">3.</span> <span class="nav-text">初始化Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Hexo-选择自己喜欢的主题"><span class="nav-number">4.</span> <span class="nav-text">配置Hexo 选择自己喜欢的主题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装node-js"><span class="nav-number">1.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化Hexo"><span class="nav-number">3.</span> <span class="nav-text">初始化Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Hexo-选择自己喜欢的主题"><span class="nav-number">4.</span> <span class="nav-text">配置Hexo 选择自己喜欢的主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#域名绑定（重点）"><span class="nav-number">5.</span> <span class="nav-text">域名绑定（重点）</span></a></li></ol></div>
             
 
           </div>
