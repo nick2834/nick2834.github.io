@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Nickの博客">
 <meta property="og:description" content="###Vuex 全局控制，写mapGetters 报语法错误 1234567...mapGetters([    &apos;sidebar&apos;,    &apos;name&apos;,    &apos;avatar&apos;,    &apos;language&apos;,    &apos;errorLogs&apos;]) 1Syntax Error: Unexpected token (135:12) 解决办法如下：1npm install transform-objec">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-27T06:50:47.000Z">
+<meta property="og:updated_time" content="2018-02-27T06:53:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue mapGetters 报语法错误解决办法">
 <meta name="twitter:description" content="###Vuex 全局控制，写mapGetters 报语法错误 1234567...mapGetters([    &apos;sidebar&apos;,    &apos;name&apos;,    &apos;avatar&apos;,    &apos;language&apos;,    &apos;errorLogs&apos;]) 1Syntax Error: Unexpected token (135:12) 解决办法如下：1npm install transform-objec">
@@ -349,7 +349,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...mapGetters([</span><br><span class="line">    <span class="string">'sidebar'</span>,</span><br><span class="line">    <span class="string">'name'</span>,</span><br><span class="line">    <span class="string">'avatar'</span>,</span><br><span class="line">    <span class="string">'language'</span>,</span><br><span class="line">    <span class="string">'errorLogs'</span></span><br><span class="line">])</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Syntax Error: Unexpected token (135:12)</span><br></pre></td></tr></table></figure>
 <p>解决办法如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install transform-object-rest-spread --save</span><br></pre></td></tr></table></figure></p>
-<p>根目录穿件.babelrc文件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"presets"</span>: [<span class="string">"es2015"</span>, <span class="string">"stage-2"</span>],</span><br><span class="line"><span class="string">"plugins"</span>: [<span class="string">"transform-runtime"</span>],</span><br><span class="line"><span class="string">"comments"</span>: <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
+<p>根目录创建.babelrc文件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"presets"</span>: [<span class="string">"es2015"</span>, <span class="string">"stage-2"</span>],</span><br><span class="line"><span class="string">"plugins"</span>: [<span class="string">"transform-runtime"</span>],</span><br><span class="line"><span class="string">"comments"</span>: <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
