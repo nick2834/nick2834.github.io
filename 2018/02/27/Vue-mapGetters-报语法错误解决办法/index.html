@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="##Vuex 全局控制，写mapGetters 报语法错误 1234567...mapGetters([    &apos;sidebar&apos;,    &apos;name&apos;,    &apos;avatar&apos;,    &apos;language&apos;,    &apos;errorLogs&apos;]) 1Syntax Error: Unexpected token (135:12) 解决办法如下：1npm install transform-object">
+<meta name="description" content="Vuex 全局控制，写mapGetters 报语法错误1234567...mapGetters([    &apos;sidebar&apos;,    &apos;name&apos;,    &apos;avatar&apos;,    &apos;language&apos;,    &apos;errorLogs&apos;]) 1Syntax Error: Unexpected token (135:12) 解决办法如下：1npm install transform-object-re">
 <meta name="keywords" content="Vue Element-ui 前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue mapGetters 报语法错误解决办法">
 <meta property="og:url" content="http://blog.nickxu.cn/2018/02/27/Vue-mapGetters-报语法错误解决办法/index.html">
 <meta property="og:site_name" content="Nickの博客">
-<meta property="og:description" content="##Vuex 全局控制，写mapGetters 报语法错误 1234567...mapGetters([    &apos;sidebar&apos;,    &apos;name&apos;,    &apos;avatar&apos;,    &apos;language&apos;,    &apos;errorLogs&apos;]) 1Syntax Error: Unexpected token (135:12) 解决办法如下：1npm install transform-object">
+<meta property="og:description" content="Vuex 全局控制，写mapGetters 报语法错误1234567...mapGetters([    &apos;sidebar&apos;,    &apos;name&apos;,    &apos;avatar&apos;,    &apos;language&apos;,    &apos;errorLogs&apos;]) 1Syntax Error: Unexpected token (135:12) 解决办法如下：1npm install transform-object-re">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-27T08:46:20.000Z">
+<meta property="og:updated_time" content="2018-02-27T10:00:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue mapGetters 报语法错误解决办法">
-<meta name="twitter:description" content="##Vuex 全局控制，写mapGetters 报语法错误 1234567...mapGetters([    &apos;sidebar&apos;,    &apos;name&apos;,    &apos;avatar&apos;,    &apos;language&apos;,    &apos;errorLogs&apos;]) 1Syntax Error: Unexpected token (135:12) 解决办法如下：1npm install transform-object">
+<meta name="twitter:description" content="Vuex 全局控制，写mapGetters 报语法错误1234567...mapGetters([    &apos;sidebar&apos;,    &apos;name&apos;,    &apos;avatar&apos;,    &apos;language&apos;,    &apos;errorLogs&apos;]) 1Syntax Error: Unexpected token (135:12) 解决办法如下：1npm install transform-object-re">
 
 
 
@@ -335,8 +335,7 @@
       
 
       
-        <p>##Vuex 全局控制，写mapGetters 报语法错误</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...mapGetters([</span><br><span class="line">    <span class="string">'sidebar'</span>,</span><br><span class="line">    <span class="string">'name'</span>,</span><br><span class="line">    <span class="string">'avatar'</span>,</span><br><span class="line">    <span class="string">'language'</span>,</span><br><span class="line">    <span class="string">'errorLogs'</span></span><br><span class="line">])</span><br></pre></td></tr></table></figure>
+        <h3 id="Vuex-全局控制，写mapGetters-报语法错误"><a href="#Vuex-全局控制，写mapGetters-报语法错误" class="headerlink" title="Vuex 全局控制，写mapGetters 报语法错误"></a>Vuex 全局控制，写mapGetters 报语法错误</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...mapGetters([</span><br><span class="line">    <span class="string">'sidebar'</span>,</span><br><span class="line">    <span class="string">'name'</span>,</span><br><span class="line">    <span class="string">'avatar'</span>,</span><br><span class="line">    <span class="string">'language'</span>,</span><br><span class="line">    <span class="string">'errorLogs'</span></span><br><span class="line">])</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Syntax Error: Unexpected token (135:12)</span><br></pre></td></tr></table></figure>
 <p>解决办法如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install transform-object-rest-spread --save</span><br></pre></td></tr></table></figure></p>
 <p>根目录创建.babelrc文件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"presets"</span>: [<span class="string">"es2015"</span>, <span class="string">"stage-2"</span>],</span><br><span class="line"><span class="string">"plugins"</span>: [<span class="string">"transform-runtime"</span>],</span><br><span class="line"><span class="string">"comments"</span>: <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
@@ -471,8 +470,17 @@ var jiathis_config={
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -562,6 +570,22 @@ var jiathis_config={
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Vuex-全局控制，写mapGetters-报语法错误"><span class="nav-number">1.</span> <span class="nav-text">Vuex 全局控制，写mapGetters 报语法错误</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -579,7 +603,7 @@ var jiathis_config={
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">鄂ICP备17030251号 copyright © 2017-2018</span>
+  <span class="author" itemprop="copyrightHolder">Nick-XU</span>
 
   
 </div>
